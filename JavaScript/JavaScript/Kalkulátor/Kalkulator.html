@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu-HU">
+ 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/JavaScript/Style/kalkulatorStyle.css" type="text/css" rel="stylesheet" />
+ 
+    <title> Mértékegység átváltás </title>
+</head>
+ 
+<body>
+    <script src="Kalkulator.js"></script>
+    <h1> Mértékegységek átváltása </h1>
+    <h2> Font - kilogramm </h2>
+   
+    <input id="inputFont" type="number" placeholder = "Font"
+    oninput = "fontKilogramkonverter(this.value)" onchange="fontKilogramkonverter(this.value)" />
+    kilogramm: <span id="outputkilogramm">  </span>
+
+    <script src="Kalkulator.js"></script>
+    <h2> Kilogramm - Font </h2>
+   
+    <input id="inputKilogramm" type="number" placeholder = "Kilogramm"
+    oninput = "fontKilogramkonverter(this.value)" onchange="fontKilogramkonverter(this.value)" />
+    Font: <span id="outputFont">  </span>
+
+    <footer>
+        <hr />
+
+        &copy; Orbán Botond
+    </footer>
+
+</body>
+ 
+</html>
